@@ -1,6 +1,5 @@
-function Header()
-{
-    return <h1>This is Header</h1>
+function Header() {
+  return <h1>React Training</h1>;
 }
 
-export default Header
+export default Header;
