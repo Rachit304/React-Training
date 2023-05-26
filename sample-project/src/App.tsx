@@ -11,6 +11,7 @@ import "./App.css";
 import List from "./Component/ListGroup";
 
 function App() {
+  let items = ["Kolkata", "Delhi", "Mumbai", "Chennai"];
   return (
     // '<>
     //   <div col-sm-12>
@@ -26,9 +27,14 @@ function App() {
     // <>
     //   <ListGroup />
     // </>
-    <div>
-      <List />
-    </div>
+    <>
+      <div>
+        <Message text="Hello Rachit"></Message>
+      </div>
+      <div>
+        <List heading="Metro Cities" items={items} />
+      </div>
+    </>
   );
 }
 

@@ -1,8 +1,10 @@
-function Message() {
-    const name = "Rachit"
+interface Props {
+  text: string;
+}
+function Message(props: Props) {
+  const name = "Rachit";
 
-    return <h4>Hello {name} </h4>
-   
+  return <h4>{props.text} </h4>;
 }
 
-export default Message
+export default Message;
