@@ -2,11 +2,12 @@ import "../CSS/Header.css";
 import React, { useState } from "react";
 import ListGroup from "./ListGroup";
 import Message from "./Message";
+import Button from "./Button";
 
 function Header() {
   let items = ["Kolkata", "Delhi", "Mumbai", "Chennai"];
   const [activePage, setActivePage] = useState("home");
-  type page = "home" | "about" | "contact";
+
   const handleItemClick = (page: string) => {
     setActivePage(page);
   };
@@ -16,6 +17,8 @@ function Header() {
     content = <ListGroup heading="Metro Cities" items={items} />;
   } else if (activePage === "about") {
     content = <Message text="Hello Rachit" />;
+  } else if (activePage === "contact") {
+    content = <Button name="Alert" />;
   }
 
   return (
