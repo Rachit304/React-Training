@@ -9,6 +9,7 @@ import ListGroup from "./Component/ListGroup";
 import FavColor from "./Component/FavColor";
 import "./App.css";
 import List from "./Component/ListGroup";
+import Button from "./Component/Button";
 
 function App() {
   let items = ["Kolkata", "Delhi", "Mumbai", "Chennai"];
@@ -29,11 +30,19 @@ function App() {
     // </>
     <>
       <div>
+        <Header />
+      </div>
+
+      {/* <div>
         <Message text="Hello Rachit"></Message>
       </div>
       <div>
         <List heading="Metro Cities" items={items} />
       </div>
+      <br></br>
+      <div>
+        <Button name="Alert" />
+      </div> */}
     </>
   );
 }
