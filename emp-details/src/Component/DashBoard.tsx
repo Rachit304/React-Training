@@ -16,28 +16,7 @@ const DashBoard = () => {
   } else {
     return (
       <>
-        <nav className="navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item" onClick={goEmployee}>
-                <a className="nav-link" href="#">
-                  Details
-                </a>
-              </li>
-              <li className="nav-item" onClick={doLogout}>
-                <a className="nav-link" href="#">
-                  LogOut
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        {/* <h1 className="display-4">Welcome {localStorage.getItem("uname")}</h1> */}
+        <h1 className="display-4">Welcome {localStorage.getItem("uname")}</h1>
       </>
     );
   }
