@@ -10,6 +10,7 @@ import FavColor from "./Component/FavColor";
 import "./App.css";
 import List from "./Component/ListGroup";
 import Button from "./Component/Button";
+import Afterlogin from "./Afterlogin";
 
 function App() {
   let items = ["Kolkata", "Delhi", "Mumbai", "Chennai"];
@@ -29,10 +30,12 @@ function App() {
     //   <ListGroup />
     // </>
     <>
-      <div>
+      {/* <div>
         <Header />
+      </div> */}
+      <div>
+        <Afterlogin />
       </div>
-
       {/* <div>
         <Message text="Hello Rachit"></Message>
       </div>
