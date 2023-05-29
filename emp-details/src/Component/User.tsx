@@ -15,7 +15,7 @@ const Details = () => {
   };
   return (
     <div>
-      <h1>Employee Details Page {id}</h1>
+      <h1>Client Details Page {id}</h1>
       <div>
         Code : {clients.code}
         <br></br>
